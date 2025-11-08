@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Script to push Real Estate Management System to GitHub
-# Developer: Raminder Jangao
+# Script to push AI Recommendation System to GitHub
+# Repository: https://github.com/tanjiroakainu/AI-Recommendation-system
 
-echo "🚀 Pushing Real Estate Management System to GitHub..."
+echo "🚀 Pushing AI Recommendation System to GitHub..."
 echo ""
 
 # Check if token is provided
@@ -13,7 +13,7 @@ if [ -z "$GITHUB_TOKEN" ]; then
     echo "📝 To create a GitHub Personal Access Token:"
     echo "   1. Go to: https://github.com/settings/tokens"
     echo "   2. Click 'Generate new token' → 'Generate new token (classic)'"
-    echo "   3. Give it a name: 'Real Estate System Push'"
+    echo "   3. Give it a name: 'AI Recommendation System Push'"
     echo "   4. Select scopes: ✅ repo (all)"
     echo "   5. Click 'Generate token'"
     echo "   6. Copy the token (you won't see it again!)"
@@ -49,4 +49,3 @@ else
     git remote set-url origin https://github.com/tanjiroakainu/AI-Recommendation-system.git
     exit 1
 fi
-

@@ -6,13 +6,13 @@ if [ -z "$GITHUB_TOKEN" ]; then
     exit 1
 fi
 
-git remote set-url origin https://${GITHUB_TOKEN}@github.com/tanjiroakainu/1AI-Recommendation-System.git
+git remote set-url origin https://${GITHUB_TOKEN}@github.com/tanjiroakainu/AI-system.git
 git push -u origin main
 
 if [ $? -eq 0 ]; then
-    git remote set-url origin https://github.com/tanjiroakainu/1AI-Recommendation-System.git
+    git remote set-url origin https://github.com/tanjiroakainu/AI-system.git
     echo "✅ Pushed successfully"
 else
-    git remote set-url origin https://github.com/tanjiroakainu/1AI-Recommendation-System.git
+    git remote set-url origin https://github.com/tanjiroakainu/AI-system.git
     exit 1
 fi
